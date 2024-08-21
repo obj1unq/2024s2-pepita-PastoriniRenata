@@ -58,7 +58,6 @@ object roque {
   var cenas = 0
 
   method pajaro() {
-    cenas = 0
     return pajaro
   }
 
@@ -69,6 +68,7 @@ object roque {
 
   method cambiarDeAve(_ave) {
     pajaro = _ave
+    cenas = 0
   }
 
 }
