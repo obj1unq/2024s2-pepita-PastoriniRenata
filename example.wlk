@@ -60,16 +60,18 @@ object roque {
   method pajaro() {
     return pajaro
   }
+  
+ method cambiarDeAve(_ave) {
+    pajaro = _ave
+    cenas = 0
+  }
 
   method alimentar(alimento) {
     pajaro.comer(alimento)
     cenas = cenas + 1
   }
 
-  method cambiarDeAve(_ave) {
-    pajaro = _ave
-    cenas = 0
-  }
+ 
 
 }
 
