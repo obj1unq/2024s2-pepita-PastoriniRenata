@@ -11,6 +11,10 @@ object pepita {
     method energia(){
         return energia
     }
+
+    method estaCansada() {
+      return energia < 30
+    }
 }
 
 object alpiste {
@@ -20,8 +24,10 @@ object alpiste {
 }
 
 object manzana {
+
     var madurez = 1
     const base = 5
+
     method energiaQueAporta(){
         return madurez * base
     }
