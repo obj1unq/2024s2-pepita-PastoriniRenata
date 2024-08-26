@@ -27,7 +27,7 @@ object manzana {
     }
 
     method madurez (){
-        self.madurez = (madurez + 1)
+        madurez = (madurez + 1)
     }
 
     method madurez (_madurez){
@@ -60,7 +60,10 @@ object roque {
   method pajaro() {
     return pajaro
   }
-  
+
+ method cenas() {
+    return cenas 
+ }
  method cambiarDeAve(_ave) {
     pajaro = _ave
     cenas = 0
