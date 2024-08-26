@@ -1,0 +1,49 @@
+import example.* // importo todas los objects del archivo example
+
+describe "Pepita" {
+    test "Pepita come y aumenta su energía" {
+
+      pepita.comer(alpiste)
+
+      assert.equals(120, pepita.energia())
+
+      pepita.comer(manzana)
+    
+      assert.equals(125, pepita.energia())
+    }
+
+    test "Pepita vuela y disminuye su energía" {
+      pepita.volar(10)
+
+      assert.equals(80, pepita.energia())
+    }
+
+    test "Pepita esta cansada" {
+        assert.notThat(pepita.estaCansada())
+       
+        pepita.volar(80)
+
+        assert.that(pepita.estaCansada())
+
+    }
+
+}
+
+describe "Roque con pepon" {
+    
+  test "roque alimenta a su ave con alpiste" {
+    //Inicializacion /Setup
+    roque.cambiarDeAve(pepon)
+    // Que quiero probar / exercise
+    roque.alimentar(alpiste)
+
+    // Assert
+    assert.equals(1, roque.cenas())
+    assert.equals(40, pepon.energia()) //energia + (alimento.energiaQueAporta() / 2) = 30 + (20/10)= 30 + 10  = 40
+
+  }
+}
+
+
+
+
